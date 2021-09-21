@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_time_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+
+            android:layout_weight="1.2"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="StartTime 1" />
+        <Button
+            android:id="@+id/btn_time_off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1.2"
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:text="EndTime 1" />
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_channel_one_rule_onTime_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+
+            android:layout_weight="1.2"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="StartTime 2" />
+        <Button
+            android:id="@+id/btn_channel_one_rule_offTime_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1.2"
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:text="EndTime 2" />
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1.2"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_weight="1.2"
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:text="Get" />
+
+    </TableRow>
+
+
+
+</LinearLayout>
