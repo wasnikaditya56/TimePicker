@@ -5,8 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
+import android.content.ContentResolver;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.net.ParseException;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.text.TextUtils;
@@ -358,16 +362,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-            Intent intent = new Intent(Intent.ACTION_INSERT)
+           Intent intent = new Intent(Intent.ACTION_INSERT)
                     .setData(CalendarContract.Events.CONTENT_URI)
+                  //  .setData(CalendarContract.Reminders.EVENT_ID ,1)
                     .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis())
                     .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endTime.getTimeInMillis())
                     .putExtra(CalendarContract.Events.TITLE, "Yoga")
                     .putExtra(CalendarContract.Events.DESCRIPTION, "Group class")
                     .putExtra(CalendarContract.Events.EVENT_LOCATION, "The gym")
                     .putExtra(CalendarContract.Events.AVAILABILITY, CalendarContract.Events.AVAILABILITY_BUSY);
-            // .putExtra(Intent.EXTRA_EMAIL, "rowan@example.com,trevor@example.com");
+
             startActivity(intent);
+
+
 
 
            /* startTime = Calendar.getInstance();
